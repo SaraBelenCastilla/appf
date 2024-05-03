@@ -52,7 +52,7 @@ function Header() {
        </div>
       <div className={`header__panel ${menu? 'activa':''}`}>
         {localStorage.getItem("Usuario") == null ? ( <li className="header__elementoLista"><Link className="header__linkLista" to={"/login"}>Login</Link></li>) :<h2 className="header__saludo">Hola {localStorage.getItem("Usuario")}!</h2>}
-        {localStorage.getItem("Usuario") == null ? (<></>) : (<li className="header__elementoLista"><Link className="header__linkLista" to={'/miPerfil'}>{perfiles  == null? <img width={30} src='/logo.png' alt="imagen del perfil"/> :<img width={30} src={perfiles.Foto} alt="perfil"/>}</Link></li>)}
+        {localStorage.getItem("Usuario") == null ? (<></>) : (<li className="header__elementoLista"><Link className="header__linkLista" to={'/miPerfil'}>{perfiles  == null? <img width={10} src='/logo.png' alt="imagen del perfil"/> :<img width={10} src={perfiles.Foto} alt="perfil"/>}</Link></li>)}
         {localStorage.getItem("Usuario") == null ? (<></>) : (<button className="header__boton" type="button"onClick={cerrarSesion}><FaRegWindowClose /></button>)}
        
       </div>
