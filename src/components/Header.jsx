@@ -21,7 +21,7 @@ function Header() {
 
   
     let perfiles = JSON.parse(localStorage.getItem('perfiles'))
-    console.log(perfiles);
+   
   
 
  

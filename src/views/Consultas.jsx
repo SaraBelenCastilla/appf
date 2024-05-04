@@ -29,7 +29,7 @@ import { Link } from 'react-router-dom';
            .then((res) => res.json())
           .then((data) => {
              setConsultas(data.arrayConsultas);
-             console.log(data.arrayConsultas);
+             
            })
            .catch((err) => console.log(err))
     

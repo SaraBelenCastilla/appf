@@ -29,7 +29,7 @@ function Productos() {
   }, []);
   
     const [product , setProduct] = useState({})
-     console.log(product);
+     
      localStorage.setItem('producto', JSON.stringify(product))
   return (
     <>

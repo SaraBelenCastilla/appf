@@ -9,7 +9,7 @@ function MiPerfil() {
   const { VITE_LINK_API_PERFIL } = import.meta.env;
   const [perfiles, setPerfiles] = useState([]);
   const[foto, setFoto]= useState({})
-  console.log(foto);
+ 
 
   useEffect(() => {
     const controller = new AbortController();
@@ -30,7 +30,7 @@ function MiPerfil() {
       .finally(() => controller.abort());
   }, []);
   localStorage.setItem('perfiles', JSON.stringify(foto))
-  console.log(foto);
+  
   return (
     <><div className="perfiles">
         {/* <Link to={"/miPerfil/nuevoPerfil"}>
