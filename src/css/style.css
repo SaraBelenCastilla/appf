@@ -160,9 +160,9 @@ body{
     backdrop-filter: blur(20px);
     border: 1.5px solid rgba(209, 213, 219, 0.3);
    
-    color: white;
+    color: var(--color);
     padding: 0 3rem;
-    font-family: GT;
+    font-family: var(--tipo-principal);
     
     
   }
@@ -211,16 +211,16 @@ body{
   }
   .header__linkLista{
 
-    font-family:cirkaBold;
+    font-family:var(--tipo-tercera);
     font-size: 1.3em;
     text-decoration: none;
-    color: white;
+    color: var(--color);
     flex-flow: nowrap;
     
   }
   .header__linkLista:hover{
 
-    font-family: GT;
+    font-family: var(--tipo-principal);
     
   }
   .header__panel{
@@ -243,7 +243,7 @@ body{
  
     background-color: transparent;
     border:none;
-   color:white;
+   color:var(--color);
    
     font-size: 2.7em;
     font-weight: bold;
@@ -262,10 +262,12 @@ body{
   }
   .menu__icon{
     font-size: 2.5em;
-    color: white;
+    color: var(--color);
   }
  
- 
+  .header__img{
+    width: 5rem;
+  }
   /* -----------inicio---------- */
 .main{
     width: 100%;
@@ -282,13 +284,13 @@ body{
 
 }
 .h2__main{
-    color: white;
-    font-family: GT;
+    color: var(--color);
+    font-family: var(--tipo-principal);
     font-size: 3em;
 }
 .main__parrafo{
     width: 25rem;
-    color: white;
+    color: var(--color);
     font-size: 2em;
 }
 /* ---------login--------- */
@@ -309,7 +311,7 @@ body{
   width: 30em;  
   
   justify-content: center;
-  color: white;
+  color:var(--color);
   background-color:transparent;
   padding: 2%;
   background-color: rgba(255, 255, 255, 0.119);
@@ -319,7 +321,7 @@ body{
   border: 1.5px solid rgba(209, 213, 219, 0.3);
 }
 .login__h2{
-  font-family:GT;
+  font-family:var(--tipo-principal);
   font-size: 2em;
   margin-bottom: 5%;
 }
@@ -339,14 +341,14 @@ body{
   border: 2px solid rgba(255, 255, 255,.4);
   border-radius: 40px;
   caret-color: darkcyan;
-  color:white;
+  color:var(--color);
   font-size: 1em;
   padding-left:5%;
 
 }
 
 .formulario__input::placeholder{
-  color: white;
+  color: var(--color);
   font-size: 1em;
   
 }
@@ -360,7 +362,7 @@ body{
 .formulario__boton{
   width: 100%;
   height: 50px;
-  background-color: white;
+  background-color: var(--color);
   border: none;
   border-radius: 40px;
   box-shadow: 0 0 10px rgba(0, 0,0, .1);
@@ -370,12 +372,12 @@ body{
   font-weight: 600;
   padding: 12px;
   margin-top: 10px;
-  font-family: GT;
+  font-family: var(--tipo-principal);
 }
 .login__p{
   margin-top: 1.25rem;
   text-align: center;
-  font-family: GT;
+  font-family: var(--tipo-principal);
  }
 /* -------productos--------- */
 .contenedor{
@@ -437,8 +439,8 @@ transition:all 0.5s ease-in-out;
   } 
   .contenedor__h2{
     
-      font-family: GT;
-      color: white;
+      font-family:var(--tipo-principal);
+      color: var(--color);
       font-size: 2em;
      
   }
@@ -455,7 +457,7 @@ transition:all 0.5s ease-in-out;
  }
 
 .contenedor__link{
-    color: white;
+    color: var(--color);
     text-decoration: none;
 }
 .contenedor__link:hover{
@@ -478,12 +480,12 @@ transition:all 0.5s ease-in-out;
 
 }
 .tarjeta__h2{
-    color: white;
-    font-family: GT;
+    color: var(--color);
+    font-family: var(--tipo-principal);
     font-size: 2em;
 }
 .tarjeta__parrafo{
-    color: white;
+    color: var(--color);
     font-size: 1.7em;
 }
 /* --------añadirProducto-----
@@ -535,9 +537,9 @@ transition:all 0.5s ease-in-out;
   margin: 10% 5%;
  }
  .consultas__h2{
-  color: white;
+  color: var(--color);
   text-align: center;
-  font-family: GT;
+  font-family: var(--tipo-principal);
   font-size: 2.7em;
  }
  .consultas__div{
@@ -571,18 +573,18 @@ transition:all 0.5s ease-in-out;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  border: 1px solid white;
+  border: 1px solid var(--color);
   padding: 10px;
  }
  .consultas__icon{
-  color: white;
+  color: var(--color);
   font-size: 1.7em;
   
   
  }
  .cuadros__h2{
-  color: white;
-  font-family: GT;
+  color: var(--color);
+  font-family: var(--tipo-principal);
   font-size: 1.5em;
  }
  .textarea{
@@ -597,14 +599,14 @@ transition:all 0.5s ease-in-out;
   
  }
  .textarea::placeholder{
-  color: white;
+  color: var(--color);
   font-size: 1em;
  
  
  }
  .plus{
   font-size: 9em;
-  color: white;
+  color: var(--color);
  }
  /* -----------nuevaConsulta------------ */
  .nuevaConsulta{
@@ -622,7 +624,7 @@ transition:all 0.5s ease-in-out;
  
   justify-content: center;
   
-  color: white;
+  color: var(--color);
   background-color:transparent;
   padding: 2%;
   background-color: rgba(255, 255, 255, 0.119);
@@ -632,7 +634,7 @@ transition:all 0.5s ease-in-out;
   border: 1.5px solid rgba(209, 213, 219, 0.3);
 }
 .nuevaConsulta__h2{
-  font-family: GT;
+  font-family: var(--tipo-principal);
   font-size: 2em;
   margin-bottom: 5%;
 }
@@ -645,12 +647,12 @@ transition:all 0.5s ease-in-out;
   border: 2px solid rgba(255, 255, 255,.4);
   border-radius: 40px;
   caret-color: darkcyan;
-  color:white;
+  color:var(--color);
   font-size: 1em;
   padding-left:5%;
  }
  .input::placeholder{
-  color: white;
+  color: var(--color);
   font-size: 1em;
   
 }
@@ -659,7 +661,7 @@ transition:all 0.5s ease-in-out;
 .boton{
   width: 100%;
   height: 50px;
-  background-color: white;
+  background-color: var(--color);
   border: none;
   border-radius: 40px;
   box-shadow: 0 0 10px rgba(0, 0,0, .1);
@@ -669,7 +671,7 @@ transition:all 0.5s ease-in-out;
   font-weight: 600;
   padding: 12px;
   margin-top: 10px;
-  font-family: GT;
+  font-family: var(--tipo-principal);
 }
 /* ---------------------editarConsultas------------- */
 
@@ -686,7 +688,7 @@ transition:all 0.5s ease-in-out;
   width: 30em;  
  
   justify-content: center;
-  color: white;
+  color: var(--color);
   background-color:transparent;
   padding: 2%;
   background-color: rgba(255, 255, 255, 0.119);
@@ -698,7 +700,7 @@ transition:all 0.5s ease-in-out;
 .editar__h2{
   margin-bottom: 5%;
   font-size: 2.5em;
-  font-family: GT;
+  font-family: var(--tipo-principal);
 
 }
 /* ---------------------borrarConsultas------------ */
@@ -713,9 +715,9 @@ transition:all 0.5s ease-in-out;
   gap: 50px;
 }
 .borrar__h2{
-  color: white;
+  color: var(--color);
   font-size: 1.7em;
-  font-family: GT;
+  font-family: var(--tipo-principal);
   
 }
 .borrar__botones{
@@ -736,8 +738,8 @@ transition:all 0.5s ease-in-out;
   padding: 25% 0 5%;
  }
  .perfiles__h2{
-  color: white;
-  font-family: GT;
+  color: var(--color);
+  font-family: var(--tipo-principal);
   font-size: 2.5em;
  }
  .perfiles__div{
@@ -768,22 +770,22 @@ transition:all 0.5s ease-in-out;
   border-radius: 40px;
   border: 2px solid rgba(225, 225, 225,.3);
   backdrop-filter: blur(20px);
-  color: white;
-  font-family: GT;
+  color: var(--color);
+  font-family: var(--tipo-principal);
  }
  .plantilla__div{
   display: flex;
   justify-content: center;
-  border: 2px solid white;
+  border: 2px solid var(--color);
   padding: 5%;
  }
  .perfil__icon{
-  color: white;
+  color: var(--color);
   font-size: 2em;
  
  }
  .perfil__boton{
-  background-color: white;
+  background-color: var(--color);
   padding: 5%;
   color: rgb(11, 128, 128);
   font-size: 1.5em;
@@ -803,7 +805,7 @@ transition:all 0.5s ease-in-out;
   width: 30em;  
  
   justify-content: center;
-  color: white;
+  color: var(--color);
   background-color:transparent;
   padding: 2%;
   background-color: rgba(255, 255, 255, 0.119);
@@ -815,7 +817,7 @@ transition:all 0.5s ease-in-out;
 .formulario__h2{
   margin-bottom: 5%;
   font-size: 2.5em;
-  font-family: GT;
+  font-family: var(--tipo-principal);
 }
  /* -----borrarPerfil------- */
  .borrar__div{
@@ -826,7 +828,7 @@ transition:all 0.5s ease-in-out;
  }
  .pp{
   width: 200px;
-  color: white;
+  color: var(--color);
   margin: 50%;
  }
  /* ----------nosotros---------------- */
@@ -840,15 +842,15 @@ transition:all 0.5s ease-in-out;
   
  }
  .nosotros__h2{
-  font-family: GT;
+  font-family: var(--tipo-principal);
   font-size: 2.7em;
-  color: white;
+  color: var(--color);
   text-align: center;
  }
  .nosotros__texto{
   margin-top: 5%;
-  color: white;
-  font-family: Cirka;
+  color: var(--color);
+  font-family: var(--tipo-secundaria);
   font-size: 1.7em;
   padding: 5%;
   background-color: rgba(255, 255, 255, 0.119);
@@ -906,9 +908,9 @@ transition:all 0.5s ease-in-out;
     backdrop-filter: blur(20px);
     border: 1.5px solid rgba(209, 213, 219, 0.3);
    
-    color: white;
+    color: var(--color);
     padding: 0 3rem;
-    font-family: GT;
+    font-family: var(--tipo-principal);
     
  }
  @media screen and (max-width:1900px){
@@ -1006,7 +1008,7 @@ transition:all 0.5s ease-in-out;
    }
    .main__parrafo{
     width: 20rem;
-    color: white;
+    color: var(--color);
     font-size: 2em;
    }
    /* ------servicios------------- */
@@ -1076,11 +1078,11 @@ transition:all 0.5s ease-in-out;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
-    border: 1px solid white;
+    border: 1px solid var(--color);
     padding: 10px;
    }
    .consultas__icon{
-    color: white;
+    color: var(--color);
     font-size: 2em;
     
     
@@ -1182,7 +1184,7 @@ transition:all 0.5s ease-in-out;
    }
    .main__parrafo{
     width: 20rem;
-    color: white;
+    color: var(--color);
     font-size: 1.7em;
     font-family: var(--tipo-secundaria);
     
@@ -1264,11 +1266,11 @@ transition:all 0.5s ease-in-out;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
-    border: 1px solid white;
+    border: 1px solid var(--color);
     padding: 10px;
    }
    .consultas__icon{
-    color: white;
+    color: var(--color);
     font-size: 2em;
     
     
@@ -1383,7 +1385,7 @@ display: flex;
  }
  .main__parrafo{
   width: 15rem;
-  color: white;
+  color: var(--color);
   font-size: 1.3em;
   font-family: var(--tipo-secundaria);
   
@@ -1459,11 +1461,11 @@ display: flex;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  border: 1px solid white;
+  border: 1px solid var(--color);
   padding: 10px;
  }
  .consultas__icon{
-  color: white;
+  color: var(--color);
   font-size: 1.7em;
   
   
